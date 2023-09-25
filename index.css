@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #edf2f9;
+    
+}
+
+.card{
+    border: 0 solid rgba(0, 0, 0, 0.13);
+    box-shadow: 0 7px 14px 0 rgba(65, 69, 88, 0.1), 0 3px 6px 0 rgba(0, 0, 0, 0.07);
+    border-radius: .0375rem;
+    background-color: #ecf0f3;
+    
+}
+.btn__nav{
+    border-radius: 30px;
+    border-color: transparent;
+    padding: 10px 45px;
+    background-color: #4b70e2;
+    box-shadow: 8px 8px 16px #d1d9e6, -8px -8px 16px #f9f9f9;
+    transform: scale(1);
+    transition: .25s;
+}
+
+.btn__nav:hover, 
+.btn__nav:focus{
+    transform: scale(0.985);
+    box-shadow: 6px 6px 10px #d1d9e6, -6px -6px 10px #f9f9f9;
+    background-color: #4b70e2;
+}
+.input__nav{
+    box-shadow: inset 2px 2px 4px #d1d9e6, inset -2px -2px 4px #f9f9f9;
+    background-color: #ecf0f3;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+}
+.input__nav:focus, 
+.input__nav:focus{
+    box-shadow: inset 4px 4px 4px #d1d9e6, inset -4px -4px 4px #f9f9f9;
+    background-color: #fff;
+    border-color: transparent;
+}
+
+.accordion-button:not(.collapsed){
+    color: black;
+    background-color: #fff;
+}
+.accordion-button:not(.collapsed):focus{
+    color: #0c63e4;
+    background-color: #e7f1ff;
+}
+.accordion-item .accordion-button{
+    box-shadow: none;
+}
+.accordion-item .accordion-button:focus{
+    border-color: #86b7fe;
+}
+.accordion-button:not(.collapsed)::after{
+    color: black;
+    transform: rotate(0deg);
+    transition: all .05s ease;
+}
+.accordion-button:not(.collapsed)::after:focus{
+    transform: rotate(-180deg);
+}
+.accordion-button:not(.collapsed)::after{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
