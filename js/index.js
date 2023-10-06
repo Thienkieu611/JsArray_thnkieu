@@ -136,7 +136,10 @@ document.getElementById('btnAcending').onclick = function(){
     var arrAcending = []
 
     //process
-    arrAcending = sortAcending(res_moreNumber);
+    // Cach 1 
+    //arrAcending = sortAcending(res_moreNumber);
+    //Cach 2: Use lodash
+    arrAcending = _.sortBy(res_moreNumber);
 
     document.getElementById('res_7').innerHTML = 'Mảng sau khi sắp xếp:  ' + arrAcending;
 }
